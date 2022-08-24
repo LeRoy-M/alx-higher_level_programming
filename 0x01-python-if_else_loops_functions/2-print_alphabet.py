@@ -1,3 +1,5 @@
 #!/usr/bin/python3
+alphabet = '' 
 for letter in range(97, 123):
-    print(chr(letter), end = '')
+    alphabet += chr(letter)
+print(f"{alphabet}")

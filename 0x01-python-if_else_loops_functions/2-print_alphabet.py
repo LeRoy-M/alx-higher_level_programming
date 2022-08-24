@@ -2,4 +2,4 @@
 alphabet = '' 
 for letter in range(97, 123):
     alphabet += chr(letter)
-print(f"{alphabet}")
+print("{}".format(alphabet))

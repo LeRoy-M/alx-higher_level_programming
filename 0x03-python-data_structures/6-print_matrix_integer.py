@@ -3,5 +3,7 @@
 def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         for column in row:
-            print("{:2d}".format(column), end='')
-        print()
+            if column is row[-1]:
+                print("{:d}".format(column))
+            else:
+                print("{:d}".format(column), end=' ')

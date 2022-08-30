@@ -4,7 +4,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     temp1, temp2 = [0, 0], [0, 0]
 
-    if len(tuple_a) == 2:
+    if len(tuple_a) >= 2:
         tuple_a2 = tuple_a
     elif len(tuple_a) == 1:
         for i in range(len(tuple_a)):
@@ -16,7 +16,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     elif len(tuple_a) == 0:
         tuple_a2 = (temp1[0], temp1[1])
 
-    if len(tuple_b) == 2:
+    if len(tuple_b) >= 2:
         tuple_b2 = tuple_b
     elif len(tuple_b) == 1:
         for i in range(len(tuple_b)):

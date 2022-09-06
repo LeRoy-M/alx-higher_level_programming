@@ -1,4 +1,2 @@
 #!/bin/bash
-export PYFILE='main.py'
-REP=$(echo $PYFILE | cut -d '.' -f 1)
-python3 -m py_compile $PYFILE && mv __pycache__/* $REP.pyc && rm -rf __pycache__
+export PYFILE='main.py' | python3 -m py_compile -b $PYFILE

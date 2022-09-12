@@ -11,4 +11,4 @@ def safe_print_list_integers(my_list=[], x=0):
         return new_list
     except (TypeError, ValueError):
         pass
-        #return new_list
+        # return new_list

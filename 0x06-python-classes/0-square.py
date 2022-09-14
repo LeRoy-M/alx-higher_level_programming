@@ -1,6 +1,4 @@
 #!/usr/bin/python3
 
 class Square:
-    """This is a multiline comment for a class
-    """
-    pass
+    pass  # Empty class block

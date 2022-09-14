@@ -1,7 +1,14 @@
 #!/usr/bin/python3
+"""This module has the class `Square` that defines a square
+with attribute `size`
+"""
+
 
 class Square:
-    """This is a multiline comment for a class
-    """
+    """This class defines a square"""
     def __init__(self, __size=0):
+        """This method initializes the `Square` class
+        Args:
+            __size (int): measure of Square
+        """
         self.__size = __size

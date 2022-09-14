@@ -3,3 +3,4 @@
 class Square:
     """This is a multiline comment for a class
     """
+    pass

@@ -37,9 +37,8 @@ class Square:
             print()
             return
         else:
-            area = self.__size * self.__size
             for y in range(self.__size):
                 for x in range(self.__size):
-                    print("{}".format('#'), end="")
+                    print("{}".format("#"), end="")
                 print()
             return

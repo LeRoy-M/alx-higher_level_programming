@@ -59,7 +59,7 @@ class Rectangle:
     def __str__(self):
         """This method returns the area with the character '#'"""
         if self.width == 0 or self.height == 0:
-            return ("{}".format())
+            return ""
         else:
             rec = ""
             for y in range(self.__height - 1):

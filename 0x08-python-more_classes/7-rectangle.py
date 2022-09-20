@@ -67,7 +67,7 @@ class Rectangle:
             return ""
         else:
             rec = ""
-            for y in range(self.__height):
+            for y in range(self.__height - 1):
                 rec += (str(self.print_symbol * self.width) + "\n")
             rec += str(self.print_symbol * self.width)
             return rec

@@ -68,8 +68,8 @@ class Rectangle:
         else:
             rec = ""
             for y in range(self.__height - 1):
-                rec += (str(self.print_symbol * self.width) + "\n")
-            rec += str(self.print_symbol * self.width)
+                rec += (str(str(self.print_symbol) * self.width) + "\n")
+            rec += str(str(self.print_symbol) * self.width)
             return rec
 
     def __repr__(self):

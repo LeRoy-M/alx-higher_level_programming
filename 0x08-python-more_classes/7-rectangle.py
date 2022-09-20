@@ -19,7 +19,6 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-        Rectangle.print_symbol
 
     @property
     def width(self):
@@ -68,9 +67,9 @@ class Rectangle:
             return ""
         else:
             rec = ""
-            for y in range(self.__height - 1):
-                rec += ((Rectangle.print_symbol * self.width) + "\n")
-            rec += (Rectangle.print_symbol * self.width)
+            for y in range(self.__height):
+                rec += (str(self.print_symbol * self.width) + "\n")
+            rec += str(self.print_symbol * self.width)
             return rec
 
     def __repr__(self):

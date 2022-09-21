@@ -23,7 +23,7 @@
 22. Tuple or not? [22-answer.txt] >> Confirm whether 'a' is a tuple with either 'Yes' or 'No'
 23. Tuple or not? [23-answer.txt] >> Confirm whether 'a' is a tuple with either 'Yes' or 'No'
 24. Who am I? [24-answer.txt] >> Output of the provided code
-25. Tuple or not? [25-answer.txt] >> Output of the provided code
+25. Tuple or not [25-answer.txt] >> Output of the provided code
 26. Empty is not empty [26-answer.txt] >> Output of the provided code
 27. Still the same? [27-answer.txt] >> Confirm the output of the provided code with either 'Yes' or 'No'
 28. Same or not? [28-answer.txt] >> Confirm the output of the provided code with either 'Yes' or 'No'

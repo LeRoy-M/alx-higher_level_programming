@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""This module creates a class that inherits from 'list'"""
+"""This module creates a class that inherits from 'list'
+
+    Args:
+        list (int): Class parameter
+"""
 
 
 class MyList(list):

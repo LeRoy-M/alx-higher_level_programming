@@ -6,4 +6,4 @@
 
 def lookup(obj):
     """Function to retrun class object attributes list"""
-    return list(dir(obj))
+    return dir(obj)

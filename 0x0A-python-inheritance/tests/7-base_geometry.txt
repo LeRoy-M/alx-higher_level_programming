@@ -1,0 +1,6 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> integer_validator("alx", 98)
+[TypeError] name must be an integer
+[ValueError] age must be greater than 0
+[ValueError] distance must be greater than 0

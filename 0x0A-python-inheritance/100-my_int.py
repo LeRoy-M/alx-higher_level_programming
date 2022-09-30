@@ -7,4 +7,5 @@
 
 
 class MyInt(int):
+    """This class 
 

@@ -7,7 +7,7 @@
 
 
 class MyList(list):
-    """This class inherits from list"""
+    """This class inherits from 'list'"""
     def ___init__(self):
         """Initialization method"""
         super().__init__()

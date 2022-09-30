@@ -2,7 +2,7 @@
 """This module creates a class that inherits from 'list'
 
     Args:
-        list (int): Class parameter
+        list (_type_): Class parameter
 """
 
 

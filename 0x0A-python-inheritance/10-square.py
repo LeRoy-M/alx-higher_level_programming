@@ -7,7 +7,7 @@ class Square(Rectangle):
     """This class is based on the previous module (9-rectangle.py)"""
     def __init__(self, size):
         """Initialization method that validates dimensions passed
-        to it through inheritance of 'BaseGeometry' class
+        to it through inheritance of 'Rectangle' class
 
         Args:
             size (int): Value passed in

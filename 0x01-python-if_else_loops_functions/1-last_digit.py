@@ -7,4 +7,4 @@ elif (abs(number) % 10) == 0:
     print(f"Last digit of {number:d} is {number % 10} and is 0")
 elif (abs(number) % 10) < 6:
     print(f"Last digit of {number:d} is {number % 10} and is less than 6 and\
-not 0")
+ not 0")

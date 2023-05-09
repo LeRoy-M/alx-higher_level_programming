@@ -5,4 +5,4 @@ for a in range(0, 10):
             if a == 8 and b == 9:
                 print("{0:d}{1:d}".format(a, b))
                 break
-            print("{0:d}{1:d},".format(a, b), end="")
+            print("{0:d}{1:d}, ".format(a, b), end="")

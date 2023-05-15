@@ -10,12 +10,24 @@
 
 int is_palindrome(listint_t **head)
 {
-	listint_t** current;
+	listint_t *fwd, *bwd;
 
-	if ()
+	fwd = malloc(sizeof(listint_t));
+	bwd = malloc(sizeof(listint_t));
+	if (fwd == NULL || bwd == NULL)
+		return (0);
+
+	fwd = *head;
+	bwd = *head;
+
+	if (*head == NULL)
+		return (1);
+	while (bwd->next != NULL)
 	{
-		->next = 
+		bwd = bwd->next;
 	}
+	if (fwd->n == bwd->n)
+		return (1);
 
 	return (0);
 }

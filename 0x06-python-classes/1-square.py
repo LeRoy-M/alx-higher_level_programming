@@ -8,8 +8,8 @@ class Square:
     """The class 'Square' that has an private
     attribute 
     """
-    def __init__(self, size):
+    def __init__(self, __size):
         """The class is initialized here, with
         'size' attribute
         """
-        self.__size = size
+        self.__size = __size

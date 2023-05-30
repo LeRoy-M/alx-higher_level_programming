@@ -6,10 +6,10 @@ the module '0-square'
 
 class Square:
     """The class 'Square' that has an private
-    attribute 
+    attribute
     """
-    def __init__(self, __size):
+    def __init__(self, size):
         """The class is initialized here, with
         'size' attribute
         """
-        self.__size = __size
+        self.__size = size

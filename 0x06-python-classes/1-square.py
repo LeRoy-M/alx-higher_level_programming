@@ -10,6 +10,6 @@ class Square:
     """
     def __init__(self, size):
         """The class is initialized here, with
-        'size' attribute
+        an instance variable 'size'
         """
         self.__size = size

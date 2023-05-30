@@ -5,7 +5,7 @@ the module '0-square'
 
 
 class Square:
-    """The class 'Square' that has an private
+    """The class 'Square' that has a private
     attribute
     """
     def __init__(self, size):

@@ -5,6 +5,7 @@
 
 class Square:
     """The empty class 'Square'"""
-    def __init__(self):
-        """The class is initialized here"""
-        pass
+    pass
+    #def __init__(self):
+        #"""The class is initialized here"""
+        #pass

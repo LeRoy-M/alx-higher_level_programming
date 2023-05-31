@@ -21,3 +21,6 @@ def print_list(my_list, len):
 
 result = safe_function(print_list, [1, 2, 3, 4], 10)
 print("result of print_list: {}".format(result))
+####################################################
+result = safe_function(print_list, [1, 2, 3, 4], 2)
+print("result of print_list: {}".format(result))

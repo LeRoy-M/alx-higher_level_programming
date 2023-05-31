@@ -57,7 +57,7 @@ class Square:
         if self.__size == 0:
             print("")
             return
-
+        '''
         if (isinstance(self.__position, tuple) and
                 len(self.__position) == 2 and
                 type(self.__position[0]) is int and
@@ -86,6 +86,5 @@ class Square:
                 for j in range(self.__size):
                     print("#", end="")
                 print("")
-        except Exception:
+        except TypeError:
             print("position must be a tuple of 2 positive integers")
-        '''

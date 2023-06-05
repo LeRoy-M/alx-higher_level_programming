@@ -20,7 +20,7 @@ class Rectangle:
     def width(self, value):
         """Function to set private instance attribute 'width'"""
         if (isinstance(value, int)):
-            if (value < 0):
+            if (value >= 0):
                 self.__width = value
             else:
                 raise ValueError("width must be >= 0")

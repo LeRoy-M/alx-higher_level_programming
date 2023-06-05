@@ -39,6 +39,6 @@ class Rectangle:
             if (value >= 0):
                 self.__height = value
             else:
-            raise ValueError("height must be >= 0")
+                raise ValueError("height must be >= 0")
         else:
             raise TypeError("height must be an integer")

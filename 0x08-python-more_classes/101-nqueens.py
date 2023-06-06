@@ -16,21 +16,18 @@ except ValueError:
     print("N must be a number")
     exit(1)
 
+
 class NQueens:
     """Class to solve the N queens problem"""
     def __init__(self, n):
-         """Initialization method"""
-         self.__n = n
+        """Initialization method"""
+        self.__n = n
 
-    #def __str__(self):
-         """Initialization method"""
-         #pass #return
-
-    def  solve_n_queens(self):
+    def solve_n_queens(self):
         """Method to solve N queens problem"""
         col = set()
-        pos_diag = set() # r + c
-        neg_diag = set() # r - c
+        pos_diag = set()  # r + c
+        neg_diag = set()  # r - c
         result = []
         board = [["0"] * self.__n for i in range(self.__n)]
 
@@ -59,6 +56,7 @@ class NQueens:
 
         backtrack(0)
         return (result)
+
 
 solution = NQueens(n)
 print(solution.solve_n_queens())

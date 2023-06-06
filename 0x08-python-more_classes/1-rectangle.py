@@ -8,15 +8,7 @@ class Rectangle:
         """Intializes 'Rectangle' instance with optional width and
         height fields set to '0'
         """
-        if not (isinstance(width, int)):
-            raise TypeError("width must be an integer")
-        if (width < 0):
-            raise ValueError("width must be >= 0")
         self.__width = width
-        if not (isinstance(height, int)):
-            raise TypeError("height must be an integer")
-        if (height < 0):
-            raise ValueError("height must be >= 0")
         self.__height = height
 
     @property
@@ -27,7 +19,13 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Function to set private instance attribute 'width'"""
-        self.__width = value
+        if (isinstance(value, int)):
+            if (value > 0):
+                self.__width = value
+            else:
+                raise ValueError("width must be >= 0")
+        else:
+            raise TypeError("width must be an integer")
 
     @property
     def height(self):
@@ -37,4 +35,10 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Function to set private instance attribute 'height'"""
-        self.__height = value
+        if (isinstance(value, int)):
+            if (value > 0):
+                self.__height = value
+            else:
+                raise ValueError("width must be >= 0")
+        else:
+            raise TypeError("width must be an integer")

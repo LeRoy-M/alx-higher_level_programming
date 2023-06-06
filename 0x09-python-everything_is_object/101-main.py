@@ -8,4 +8,4 @@ try:
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
 
-print(lc.__dict__)
+#print(lc.__dict__)

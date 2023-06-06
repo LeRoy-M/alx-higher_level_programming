@@ -12,50 +12,27 @@ try:
     my_rectangle = Rectangle(2, -3)
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
+print(my_rectangle.__dict__)
 
 try:
     my_rectangle = Rectangle(-2, 3)
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
+print(my_rectangle.__dict__)
 
 try:
     my_rectangle = Rectangle(2, "3")
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
+print(my_rectangle.__dict__)
 
 try:
     my_rectangle = Rectangle("2", 3)
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
+print(my_rectangle.__dict__)
 
-try:
-    my_rectangle = Rectangle(2, 3)
-    my_rectangle.width = -4
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    my_rectangle = Rectangle(2, 3)
-    my_rectangle.width = "4"
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    my_rectangle = Rectangle(2, 3)
-    my_rectangle.height = -4
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    my_rectangle = Rectangle(2, 3)
-    my_rectangle.height = "4"
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-my_rectangle = Rectangle(2, 4)
+my_rectangle = Rectangle(4)
 print("{} - {}".format(my_rectangle.width, my_rectangle.height))
-my_rectangle.width = 10
-print("{} - {}".format(my_rectangle.width, my_rectangle.height))
-
 my_rectangle = Rectangle()
 print("{} - {}".format(my_rectangle.width, my_rectangle.height))

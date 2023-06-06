@@ -51,3 +51,11 @@ try:
     my_rectangle.height = "4"
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
+
+my_rectangle = Rectangle(2, 4)
+print("{} - {}".format(my_rectangle.width, my_rectangle.height))
+my_rectangle.width = 10
+print("{} - {}".format(my_rectangle.width, my_rectangle.height))
+
+my_rectangle = Rectangle()
+print("{} - {}".format(my_rectangle.width, my_rectangle.height))

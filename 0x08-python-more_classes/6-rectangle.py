@@ -3,9 +3,9 @@
 
 
 class Rectangle:
+    """Defines a class 'Rectangle'"""
     number_of_instances = 0
 
-    """Defines a class 'Rectangle'"""
     def __init__(self, width=0, height=0):
         """Intializes 'Rectangle' instance with optional width and
         height fields set to '0'

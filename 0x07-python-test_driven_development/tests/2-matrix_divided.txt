@@ -9,3 +9,7 @@ ZeroDivisionError: division by zero
 Traceback (most recent call last):
     ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> matrix_divided([[78, 12], [85, 46, 9]], 5)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size

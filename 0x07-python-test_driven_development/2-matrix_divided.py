@@ -4,6 +4,10 @@
 
 def matrix_divided(matrix, div):
     """Function for matrix division"""
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
+    if not isinstance(div, int) and not isinstance(div, float):
+        raise TypeError("div must be a number")
     if len(matrix[0]) != len(matrix[1]):
         raise TypeError("Each row of the matrix must have the same size")
     new_mat = [[] for i in range(2)]

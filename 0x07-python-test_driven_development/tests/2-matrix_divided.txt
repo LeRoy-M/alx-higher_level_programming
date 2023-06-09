@@ -1,0 +1,11 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix_divided([[9, 8], [8, 9]], -2)
+[[-4.5, -4.0], [-4.0, -4.5]]
+>>> matrix_divided([[9, 8], [8, 9]], 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
+>>> matrix_divided([[9, "8"], [8, 9]], 5)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats

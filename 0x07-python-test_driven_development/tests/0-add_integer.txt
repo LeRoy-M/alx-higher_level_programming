@@ -6,6 +6,8 @@
 -1
 >>> add_integer(9, -8)
 1
+>>> add_integer(9.0, 8)
+17
 >>> add_integer("9", 8)
 Traceback (most recent call last):
     ...

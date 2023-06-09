@@ -21,3 +21,7 @@ IndexError: list index out of range
 Traceback (most recent call last):
     ...
 TypeError: div must be a number
+>>> matrix_divided([[3, 9], [float("NaN"), 15]], 7)
+[[0.43, 1.29], [nan, 2.14]]
+>>> matrix_divided([[float("Inf"), 9], [76, 15]], 7)
+[[inf, 1.29], [10.86, 2.14]]

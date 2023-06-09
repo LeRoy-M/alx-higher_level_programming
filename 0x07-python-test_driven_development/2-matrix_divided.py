@@ -7,7 +7,9 @@ def matrix_divided(matrix, div):
     """Function for matrix division"""
     for x in range(len(matrix)):
         for y in range(len(matrix[x])):
-            if not isinstance(matrix[x][y], int) and not isinstance(matrix[x][y], float):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            if not isinstance(matrix[x][y], int) and
+            not isinstance(matrix[x][y], float):
+                raise TypeError("matrix must be a matrix
+                                (list of lists) of integers/floats")
             new_mat[x].append(round(matrix[x][y] / div, 2))
     return new_mat

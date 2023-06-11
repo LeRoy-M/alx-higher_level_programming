@@ -8,9 +8,8 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
-    if len(matrix) > 1:
-        if len(matrix[0]) != len(matrix[1]):
-            raise TypeError("Each row of the matrix must have the same size")
+    if len(matrix[0]) != len(matrix[1]):
+        raise TypeError("Each row of the matrix must have the same size")
     new_mat = [[] for i in range(len(matrix))]
     for x in range(len(matrix)):
         for y in range(len(matrix[x])):

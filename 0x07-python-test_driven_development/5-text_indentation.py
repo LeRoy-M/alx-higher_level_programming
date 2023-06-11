@@ -10,8 +10,13 @@ def text_indentation(text):
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    for c in text:
+    x = 1
+    for i, c in enumerate(text):
+        if ord(c) == 32 and text[i - x] in [".", "?", ":"]:
+            x += 1
+            continue
         if c in [".", "?", ":"]:
             print(f"{c}\n")
+            x = 1
             continue
         print(f"{c}", end="")

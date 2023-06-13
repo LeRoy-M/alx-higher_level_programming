@@ -7,4 +7,5 @@ def class_to_json(obj):
     """Function that returns dict description with simple
     data structure for JSON serialization of an object
     """
-    return obj.__dict__
+    # return obj.__dict__
+    return json.loads(json.dumps(obj, default=lambda o : o.__dict__))

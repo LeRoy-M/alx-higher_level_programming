@@ -28,9 +28,9 @@ class Student:
         """Method that replaces all attributes of the
         'Student' instance
         """
-        if json['first_name']:
+        if 'first_name' in json.keys():
             self.first_name = json['first_name']
-        if json['last_name']:
+        if 'last_name' in json.keys():
             self.last_name = json['last_name']
-        if json['age']:
+        if 'age' in json.keys():
             self.age = json['age']

@@ -4,6 +4,4 @@
 
 class BaseGeometry:
     """Class definition for 'BaseGeometry'"""
-    def __init__(self):
-        """Initialization method"""
-        pass
+    pass

@@ -19,4 +19,5 @@
 >>> my_list.print_sorted()
 [-9, 1, 2, 4, 6, 8]
 
-
+>>> my_list is my_list.print_sorted
+False

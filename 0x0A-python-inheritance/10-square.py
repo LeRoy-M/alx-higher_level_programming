@@ -2,7 +2,7 @@
 """This module contains the 'Square' class and inherits
 from 'Rectangle' in module '9-rectangle'
 """
-Rectangle = __import__('9-rectangle').Rectangle
+#Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):

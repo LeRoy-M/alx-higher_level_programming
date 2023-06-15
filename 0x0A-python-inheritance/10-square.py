@@ -2,7 +2,7 @@
 """This module contains the 'Square' class and inherits
 from 'Rectangle' in module '9-rectangle'
 """
-#Rectangle = __import__('9-rectangle').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
@@ -14,7 +14,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """String method"""
-        return f"[Rectangle] {self.__size}/{self.__size}"
+        return f"[{super().__class__.__name__}] {self.__size}/{self.__size}"
 
     def area(self):
         """Method to calculate area of a square"""

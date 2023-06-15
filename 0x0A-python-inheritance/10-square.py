@@ -14,7 +14,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """String method"""
-        return f"[{super().__class__.__name__}] {self.__size}/{self.__size}"
+        return f"[Rectangle] {self.__size}/{self.__size}"
 
     def area(self):
         """Method to calculate area of a square"""

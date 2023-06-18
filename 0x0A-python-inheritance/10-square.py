@@ -10,12 +10,12 @@ class Square(Rectangle):
     def __init__(self, size):
         """Initialization method"""
         self.integer_validator("size", size)
-        self.__size = size
+        super().__init__(size, size)
 
     def __str__(self):
         """String method"""
-        return f"[{super().__class__.__name__}] {self.__size}/{self.__size}"
+        return super().__str__()
 
     def area(self):
         """Method to calculate area of a square"""
-        return self.__size * self.__size
+        return super().area()

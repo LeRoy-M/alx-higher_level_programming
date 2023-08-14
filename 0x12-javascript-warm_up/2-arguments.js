@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const args = process.argv.length;
 
-if (args > 2) {
+if (args > 3) {
   console.log('Arguments found');
 } else if (args === 2) {
   console.log('Argument found');

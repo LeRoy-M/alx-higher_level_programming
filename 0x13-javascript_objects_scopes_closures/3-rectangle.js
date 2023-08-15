@@ -7,7 +7,7 @@ module.exports = class Rectangle {
     }
   }
 
-  // print Instance Method
+  // 'print()' Instance Method
   print () {
     for (let i = 0; i < this.height; i++) {
       let rec = '';

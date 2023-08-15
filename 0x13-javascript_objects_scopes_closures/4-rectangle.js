@@ -20,9 +20,7 @@ module.exports = class Rectangle {
 
   // 'rotate()' Instance Method
   rotate () {
-    let temp = this.width;
-    this.width = this.height;
-    this.height = temp;
+    [this.width, this.height] = [this.height, this.width];
   }
 
   // 'double()' Instance Method

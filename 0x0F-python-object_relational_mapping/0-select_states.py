@@ -3,6 +3,7 @@
 'hbtn_0e_0_usa' database
 """
 import MySQLdb
-db = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="root", db="hbtn_0e_0_usa", charset="utf8")
+db = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="root",
+                     db="hbtn_0e_0_usa", charset="utf8")
 
 print(states)

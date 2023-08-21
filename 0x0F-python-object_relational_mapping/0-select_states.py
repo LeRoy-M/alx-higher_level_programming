@@ -11,7 +11,7 @@ if __name__ == "__main__":
                            passwd=argv[2], db=argv[3], charset="utf8")
 
     cur = conn.cursor()
-    cur.execute("SELECT * FROM `states` FROM ORDER BY id ASC")
+    cur.execute("SELECT * FROM states FROM ORDER BY id ASC")
     rows = cur.fetchall()
     for row in rows:
         print(row)

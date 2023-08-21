@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 """Module that uses 'MySQLdb' import to lists all 'states'
 in 'hbtn_0e_0_usa' database
 """

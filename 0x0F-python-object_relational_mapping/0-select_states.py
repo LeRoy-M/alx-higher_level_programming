@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that uses 'MySQLdb' import to lists all 'states'
+"""Module that uses 'MySQLdb' import to list all 'states'
 in 'hbtn_0e_0_usa' database
 """
 import MySQLdb

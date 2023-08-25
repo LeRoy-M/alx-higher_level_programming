@@ -11,10 +11,11 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3], charset="utf8")
 
     cur = db.cursor()
-    cur.execute(f"SELECT * FROM states WHERE name LIKE BINARY '{argv[4]}' FROM\
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'\
                 ORDER BY id ASC")
     records = cur.fetchall()
     for record in records:
-        print(record)
+        if record[1][0] == 'N':
+            print(record)
     cur.close()
     db.close()

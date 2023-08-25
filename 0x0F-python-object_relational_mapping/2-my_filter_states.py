@@ -12,7 +12,8 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3], charset="utf8")
 
     cur = db.cursor()
-    cur.execute(f"SELECT * FROM states WHERE name LIKE BINARY '{argv[4]}'")
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'\
+                 ".format(argv[4]))
     records = cur.fetchall()
     for record in records:
         print(record)

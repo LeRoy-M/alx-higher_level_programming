@@ -3,5 +3,5 @@
 code=$(curl -so  /dev/null -Iw "%{http_code}" "$1")
 
 if [ "$code" -eq 200 ]; then
-	curl "$1"
+	curl -sL "$1"
 fi

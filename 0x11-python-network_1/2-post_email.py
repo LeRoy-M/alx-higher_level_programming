@@ -9,9 +9,8 @@ from sys import argv
 if __name__ == "__main__":
     url = argv[1]
     val = {"email": argv[2]}
-    header = {"User-Agent": user_agent}
     data = UP.urlencode(val).encode("ascii")
-    request = UR.Request(url, data, header)
+    request = UR.Request(url, data)
 
     with UR.urlopen(request) as response:
         print(reponse.read().decode("utf-8"))

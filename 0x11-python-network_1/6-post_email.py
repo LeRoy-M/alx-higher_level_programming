@@ -6,6 +6,5 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    payload = {"email": argv[2]}
-    response = requests.get(argv[1])
-    print(response.url())
+    response = requests.post(argv[1], {"email": argv[2]})
+    print(response)

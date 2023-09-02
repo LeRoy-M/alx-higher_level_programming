@@ -11,7 +11,7 @@ if __name__ == "__main__":
     if len(argv) > 1:
         q = argv[1]
 
-    response = requests.get("http://0.0.0.0:5000/search_user", {"q": q})
+    response = requests.post("http://0.0.0.0:5000/search_user", {"q": q})
     try:
         api = response.json()
         if not api:

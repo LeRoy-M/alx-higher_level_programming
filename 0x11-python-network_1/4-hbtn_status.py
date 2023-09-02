@@ -6,4 +6,4 @@ if __name__ == "__main__":
     response = requests.get("https://alx-intranet.hbtn.io/status")
     print("Body response:")
     print("\t- type:", type(str(response)))
-    print("\t- content:", response.content)
+    print("\t- content:", response.text)

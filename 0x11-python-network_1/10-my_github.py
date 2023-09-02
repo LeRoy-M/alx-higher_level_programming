@@ -8,4 +8,4 @@ from sys import argv
 if __name__ == "__main__":
     url = "https://api.github.com/user"
     api_r = requests.get(url, auth=(argv[1], argv[2])).json()
-    print(f"{api_r['id']}")
+    print(api_r.get("id"))

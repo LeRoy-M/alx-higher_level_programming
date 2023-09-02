@@ -7,9 +7,7 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    q = ""
-    if len(argv) > 1:
-        q = argv[1]
+    q = "" if len(argv) < 2 else argv[1]
 
     response = requests.post("http://0.0.0.0:5000/search_user", {"q": q})
     try:
@@ -18,5 +16,6 @@ if __name__ == "__main__":
             print("No result")
         else:
             print(f"[{api['id']}] {api['name']}")
-    except requests.exceptions.JSONDecodeError:
+    # except requests.exceptions.JSONDecodeError:
+    except ValueError:
         print("Not a valid JSON")

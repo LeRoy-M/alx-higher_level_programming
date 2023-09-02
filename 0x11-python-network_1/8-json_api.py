@@ -12,5 +12,11 @@ if __name__ == "__main__":
         q = argv[1]
 
     response = requests.get("http://0.0.0.0:5000/search_user", {"q": q})
-    response.json()
-    print(f"[{response['id']}] {response['name']}")
+    try:
+        api = response.json()
+        if not api:
+            print("No result")
+        else:
+            print(f"[{api['id']}] {api['name']}")
+    except requests.exceptions.JSONDecodeError:
+        print("Not a valid JSON")

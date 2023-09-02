@@ -13,4 +13,4 @@ if __name__ == "__main__":
     request = UR.Request(url, data)
 
     with UR.urlopen(request) as response:
-        print(reponse.read().decode("utf-8"))
+        print(response.read().decode("utf-8"))

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module that takes 2 arguments in order to solve provided challenge"""
+"""Module that takes 2 arguments (1st is the repo name, and the second is
+the repo owner's name), in order to solve provided challenge"""
 import requests
 from sys import argv
 

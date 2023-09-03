@@ -8,4 +8,6 @@ if __name__ == "__main__":
     commits = requests.get(url).json()
     count = len(commits) - 1
     for i in range(count, (count - 10), -1):
-        print(commits[i])
+        sha = commits[i]["sha"]
+        name = commits[i]["commit"]["author"]["name"]
+        print(f"{sha}: {name}")

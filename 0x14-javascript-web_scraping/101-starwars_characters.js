@@ -11,6 +11,6 @@ function logName (parsed, idx) {
   request(parsed[idx], (error, response, body) => {
     if (error) console.log(error);
     console.log(JSON.parse(body).name);
-    if ((idx + 1) < parsed.length) { (parsed, ++idx); }
+    if ((idx + 1) < parsed.length) { logName(parsed, ++idx); }
   });
 }

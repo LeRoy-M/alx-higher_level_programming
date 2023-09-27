@@ -6,11 +6,9 @@ request(process.argv[2], (error, response, body) => {
   if (error) console.log(error);
 
   const cmpdTasks = {};
-  let completed = 0;
   for (let i = 0; i < parsed.length; i++) {
     if (parsed[i].completed) {
-      if (!(parsed[i].userId in cmpdTasks)) { cmpdTasks[parsed[i].userId] = 1; }
-      else { cmpdTasks[parsed[i].userId]++ ; }
+      if (!(parsed[i].userId in cmpdTasks)) { cmpdTasks[parsed[i].userId] = 1; } else { cmpdTasks[parsed[i].userId]++; }
     }
   }
   console.log(cmpdTasks);

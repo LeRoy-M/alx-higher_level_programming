@@ -5,16 +5,13 @@ request(process.argv[2], (error, response, body) => {
   const parsed = JSON.parse(body);
   if (error) console.log(error);
 
-  const tasks = {};
+  const cmpdTasks = {};
   let completed = 0;
   for (let i = 0; i < parsed.length; i++) {
-    if (parsed[i].completed === true) {
-      if (!(parsed[i].userId in tasks)) {
-        completed = 0;
-      }
-      completed++;
-      tasks[parsed[i].userId] = completed;
+    if (parsed[i].completed) {
+      if (!(parsed[i].userId in cmpdTasks)) { cmpdTasks[parsed[i].userId] = 1; }
+      else { cmpdTasks[parsed[i].userId]++ ; }
     }
   }
-  console.log(tasks);
+  console.log(cmpdTasks);
 });

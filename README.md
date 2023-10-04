@@ -42,3 +42,5 @@ _**Project Scoope**_ - `JavaScript`
 _**Project Scoope**_ - `JavaScript`
 ## 0x14. JavaScript - Web scraping
 _**Project Scoope**_ - `Scripting` `API` `JavaScript`
+## 0x15. JavaScript - Web jQuery
+_**Project Scoope**_ - `Front-end` `JavaScript`
